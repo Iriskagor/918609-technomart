@@ -7,63 +7,63 @@
   <body>
     <header>
       <section class="toolbar">
-        <h1>ТЕХНОМАРТ</h1>
-        <button type="button">
+        <h1 class="toolbar__title">ТЕХНОМАРТ</h1>
+        <button class="toolbar__button" type="button">
           <img src="http://placehold.it/17x17">
           <span>Поиск:</span>
         </button>
-        <button type="button">
+        <button class="toolbar__button" type="button">
           <img src="http://placehold.it/14x16">
           <span>Закладки: 0</span>
         </button>
-        <button type="button">
+        <button class="toolbar__button" type="button">
           <img src="http://placehold.it/15x15">
           <span>Корзина: 0</span>
         </button>
-        <a href="#">Оформить заказ</a>
+        <a href="#" class="toolbar__link">Оформить заказ</a>
       </section>
       <section class="shop-information">
-        <p>
+        <p class="shop-information__text">
           Интернет-магазин <br>
           строительных материалов<br>
           и инструментов для ремонта
         </p>
-        <section class="contacts">
+        <section class="shop-information__contacts">
           <button type="button">
             <img src="http://placehold.it/15x15">
             <span>+7 (812) 555-05-55</span>
           </button>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </section>
-        <section class="user-cabinet">
-          <button type="button">
+        <section class="shop-information__user-cabinet">
+          <button class="shop-information__login" type="button">
             <img src="http://placehold.it/20x17">
             <span>Войти</span>
           </button>
-          <button type="button">Регистрация</button>
+          <button class="shop-information__registration" type="button">Регистрация</button>
         </section>
       </section>
-      <nav>
+      <nav class="main-nav">
         <ul>
-          <li>
+          <li class="main-nav__item">
             <a href="#">Главная</a>
           </li>
-          <li>
+          <li class="main-nav__item">
             <a href="#">Компания</a>
           </li>
-          <li>
+          <li class="main-nav__item">
             <a href="#">Каталог</a>
           </li>
-          <li>
+          <li class="main-nav__item">
             <a href="#">Новости</a>
           </li>
-          <li>
+          <li class="main-nav__item">
             <a href="#">Спецпредложения</a>
           </li>
-          <li>
+          <li class="main-nav__item">
             <a href="#">Доставка</a>
           </li>
-          <li>
+          <li class="main-nav__item">
             <a href="#">Контакты</a>
           </li>
         </ul>
@@ -71,33 +71,95 @@
     </header>
     <main>
       <section class="information">
-        <section class="about">
-          <h2>КОМПАНИЯ «Техномарт»</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
+        <section class="information__about">
+          <h2 class="information__title">КОМПАНИЯ «Техномарт»</h2>
+          <p class="information__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p class="information__text">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
           <ul>
-            <li>
+            <li class="information__list">
               <img src="http://placehold.it/17x17">
               <span>Деловые линии</span>
             </li>
-            <li>
+            <li class="information__list">
               <img src="http://placehold.it/17x17">
               <span>Автотрейдинг</span>
             </li>
-            <li>
+            <li class="information__list">
               <img src="http://placehold.it/17x17">
               <span>ЖелДорЭкспедиция</span>
             </li>
           </ul>
-          <a href="#">Подробнее о компании</a>
+          <a class="information__button" href="#">Подробнее о компании</a>
         </section>
-        <section class="contacts">
-          <h2>КОНТАКТЫ</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+        <section class="information__contacts">
+          <h2 class="information__title">КОНТАКТЫ</h2>
+          <p class="information__text">Вы можете забрать товар сами, заехав в наш офис:</p>
           <img src="http://placehold.it/300x158">
-          <a href="#">Заблудились? Напишите нам!</a>          
+          <a class="information__button" href="#">Заблудились? Напишите нам!</a>
         </section>
       </section>
     </main>
+    <footer class="footer">
+      <h1 class="footer__title">ТЕХНОМАРТ</h1>
+      <section class="footer__about-list">
+        <ul>
+          <li class="footer__about-list__item">
+            <a href="#">Компания</a>
+          </li>
+          <li class="footer__about-list__item">
+            <a href="#">Новости</a>
+          </li>
+          <li class="footer__about-list__item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="footer__about-list__item">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="footer__about-list__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </section>
+      <p class="footer__addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7 (812) 555-05-55</p>
+      <section class="footer__offer-list">
+        <ul>
+          <li class="footer__offer-list__item">
+            <a href="#">Материалы</a>
+          </li>
+          <li class="footer__offer-list__item">
+            <a href="#">Техника</a>
+          </li>
+          <li class="footer__offer-list__item">
+            <a href="#">Инструмент</a>
+          </li>
+          <li class="footer__offer-list__item">
+            <a href="#">Спецпредложения</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__rights">
+        <p class="footer__copyright">© 2010–2017 Компания «Техномарт»</p>
+        <p class="footer__copyright">Все права защищены</p>
+        <div class="footer__social">
+          <a class="footer__social__link" href="#">
+            <img src="http://placehold.it/26x15" alt="">
+          </a>
+          <a class="footer__social__link" href="#">
+            <img src="http://placehold.it/26x15" alt="">
+          </a>
+          <a class="footer__social__link" href="#">
+            <img src="http://placehold.it/26x15" alt="">
+          </a>
+        </div>
+        <section class="footer__links">
+          <p class="footer__links__item">Обратная связь:</p>
+          <a class="footer__links_link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </section>
+        <section class="footer__links">
+          <p class="footer__links__item">Разработано —</p>
+          <a class="footer__links_link" href="https://htmlacademy.ru">htmlacademy.ru</a>
+        </section>
+      </section>
+    </footer>
   </body>
 </html>
