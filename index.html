@@ -5,8 +5,139 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header>
+      <section class="toolbar">
+        <h1 class="toolbar__title">ТЕХНОМАРТ</h1>
+        <div class="toolbar__search">
+          <input type="text" placeholder="Поиск:" name="" value="">
+        </div>
+        <button class="toolbar__button" type="button">Закладки: 0</button>
+        <button class="toolbar__button" type="button">Корзина: 0</button>
+        <a class="toolbar__link" href="#" >Оформить заказ</a>
+      </section>
+      <section class="shop-information">
+        <p class="shop-information__text">
+          Интернет-магазин
+          строительных материалов
+          и инструментов для ремонта
+        </p>
+        <section class="shop-information__contacts">
+          <button type="button">+7 (812) 555-05-55</button>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </section>
+        <section class="shop-information__user-cabinet">
+          <button class="shop-information__login" type="button">Войти</button>
+          <button class="shop-information__registration" type="button">Регистрация</button>
+        </section>
+      </section>
+      <nav class="main-nav">
+        <ul>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Компания</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Новости</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Спецпредложения</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Доставка</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="information">
+        <div class="information__about">
+          <h2 class="information__title">КОМПАНИЯ «Техномарт»</h2>
+          <p class="information__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p class="information__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+          <ul>
+            <li class="information__list">Деловые линии</li>
+            <li class="information__list">Автотрейдинг</li>
+            <li class="information__list">ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="information__button" href="#">Подробнее о компании</a>
+        </div>
+        <div class="information__contacts">
+          <h2 class="information__title">КОНТАКТЫ</h2>
+          <p class="information__text">Вы можете забрать товар сами, заехав в наш офис:</p>
+          <img src="http://placehold.it/300x158">
+          <a class="information__button" href="#">Заблудились? Напишите нам!</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <h1 class="footer__title">ТЕХНОМАРТ</h1>
+      <section class="footer__about-list">
+        <ul>
+          <li class="footer__about-list__item">
+            <a class="footer__about-list__link" href="#">Компания</a>
+          </li>
+          <li class="footer__about-list__item">
+            <a class="footer__about-list__link" href="#">Новости</a>
+          </li>
+          <li class="footer__about-list__item">
+            <a class="footer__about-list__link" href="#">Каталог</a>
+          </li>
+          <li class="footer__about-list__item">
+            <a class="footer__about-list__link" href="#">Доставка</a>
+          </li>
+          <li class="footer__about-list__item">
+            <a class="footer__about-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </section>
+      <p class="footer__addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+      <section class="footer__offer-list">
+        <ul>
+          <li class="footer__offer-list__item">
+            <a class="footer__offer-list__link" href="#">Материалы</a>
+          </li>
+          <li class="footer__offer-list__item">
+            <a class="footer__offer-list__link" href="#">Техника</a>
+          </li>
+          <li class="footer__offer-list__item">
+            <a class="footer__offer-list__link" href="#">Инструмент</a>
+          </li>
+          <li class="footer__offer-list__item">
+            <a class="footer__offer-list__link" href="#">Спецпредложения</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__rights">
+        <p class="footer__copyright">© 2010–2017 Компания «Техномарт»</p>
+        <p class="footer__copyright">Все права защищены</p>
+        <div class="footer__social">
+          <a class="footer__social__link" href="#">
+            <img src="http://placehold.it/26x15" alt="">
+          </a>
+          <a class="footer__social__link" href="#">
+            <img src="http://placehold.it/26x15" alt="">
+          </a>
+          <a class="footer__social__link" href="#">
+            <img src="http://placehold.it/26x15" alt="">
+          </a>
+        </div>
+        <section class="footer__links">
+          <p class="footer__links__item">Обратная связь:</p>
+          <a class="footer__links_link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </section>
+        <section class="footer__links">
+          <p class="footer__links__item">Разработано —</p>
+          <a class="footer__links_link" href="https://htmlacademy.ru">htmlacademy.ru</a>
+        </section>
+      </section>
+    </footer>
   </body>
 </html>
