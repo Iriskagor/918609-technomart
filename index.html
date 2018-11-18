@@ -8,95 +8,73 @@
     <header>
       <section class="toolbar">
         <h1 class="toolbar__title">ТЕХНОМАРТ</h1>
-        <button class="toolbar__button" type="button">
-          <img src="http://placehold.it/17x17">
-          <span>Поиск:</span>
-        </button>
-        <button class="toolbar__button" type="button">
-          <img src="http://placehold.it/14x16">
-          <span>Закладки: 0</span>
-        </button>
-        <button class="toolbar__button" type="button">
-          <img src="http://placehold.it/15x15">
-          <span>Корзина: 0</span>
-        </button>
-        <a href="#" class="toolbar__link">Оформить заказ</a>
+        <div class="toolbar__search">
+          <input type="text" placeholder="Поиск:" name="" value="">
+        </div>
+        <button class="toolbar__button" type="button">Закладки: 0</button>
+        <button class="toolbar__button" type="button">Корзина: 0</button>
+        <a class="toolbar__link" href="#" >Оформить заказ</a>
       </section>
       <section class="shop-information">
         <p class="shop-information__text">
-          Интернет-магазин <br>
-          строительных материалов<br>
+          Интернет-магазин
+          строительных материалов
           и инструментов для ремонта
         </p>
         <section class="shop-information__contacts">
-          <button type="button">
-            <img src="http://placehold.it/15x15">
-            <span>+7 (812) 555-05-55</span>
-          </button>
+          <button type="button">+7 (812) 555-05-55</button>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </section>
         <section class="shop-information__user-cabinet">
-          <button class="shop-information__login" type="button">
-            <img src="http://placehold.it/20x17">
-            <span>Войти</span>
-          </button>
+          <button class="shop-information__login" type="button">Войти</button>
           <button class="shop-information__registration" type="button">Регистрация</button>
         </section>
       </section>
       <nav class="main-nav">
         <ul>
           <li class="main-nav__item">
-            <a href="#">Главная</a>
+            <a class="main-nav__link" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Компания</a>
+            <a class="main-nav__link" href="#">Компания</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Каталог</a>
+            <a class="main-nav__link" href="#">Каталог</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Новости</a>
+            <a class="main-nav__link" href="#">Новости</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Спецпредложения</a>
+            <a class="main-nav__link" href="#">Спецпредложения</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Доставка</a>
+            <a class="main-nav__link" href="#">Доставка</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Контакты</a>
+            <a class="main-nav__link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="information">
-        <section class="information__about">
+        <div class="information__about">
           <h2 class="information__title">КОМПАНИЯ «Техномарт»</h2>
           <p class="information__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p class="information__text">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
+          <p class="information__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
           <ul>
-            <li class="information__list">
-              <img src="http://placehold.it/17x17">
-              <span>Деловые линии</span>
-            </li>
-            <li class="information__list">
-              <img src="http://placehold.it/17x17">
-              <span>Автотрейдинг</span>
-            </li>
-            <li class="information__list">
-              <img src="http://placehold.it/17x17">
-              <span>ЖелДорЭкспедиция</span>
-            </li>
+            <li class="information__list">Деловые линии</li>
+            <li class="information__list">Автотрейдинг</li>
+            <li class="information__list">ЖелДорЭкспедиция</li>
           </ul>
           <a class="information__button" href="#">Подробнее о компании</a>
-        </section>
-        <section class="information__contacts">
+        </div>
+        <div class="information__contacts">
           <h2 class="information__title">КОНТАКТЫ</h2>
           <p class="information__text">Вы можете забрать товар сами, заехав в наш офис:</p>
           <img src="http://placehold.it/300x158">
           <a class="information__button" href="#">Заблудились? Напишите нам!</a>
-        </section>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -104,36 +82,36 @@
       <section class="footer__about-list">
         <ul>
           <li class="footer__about-list__item">
-            <a href="#">Компания</a>
+            <a class="footer__about-list__link" href="#">Компания</a>
           </li>
           <li class="footer__about-list__item">
-            <a href="#">Новости</a>
+            <a class="footer__about-list__link" href="#">Новости</a>
           </li>
           <li class="footer__about-list__item">
-            <a href="#">Каталог</a>
+            <a class="footer__about-list__link" href="#">Каталог</a>
           </li>
           <li class="footer__about-list__item">
-            <a href="#">Доставка</a>
+            <a class="footer__about-list__link" href="#">Доставка</a>
           </li>
           <li class="footer__about-list__item">
-            <a href="#">Контакты</a>
+            <a class="footer__about-list__link" href="#">Контакты</a>
           </li>
         </ul>
       </section>
-      <p class="footer__addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7 (812) 555-05-55</p>
+      <p class="footer__addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
       <section class="footer__offer-list">
         <ul>
           <li class="footer__offer-list__item">
-            <a href="#">Материалы</a>
+            <a class="footer__offer-list__link" href="#">Материалы</a>
           </li>
           <li class="footer__offer-list__item">
-            <a href="#">Техника</a>
+            <a class="footer__offer-list__link" href="#">Техника</a>
           </li>
           <li class="footer__offer-list__item">
-            <a href="#">Инструмент</a>
+            <a class="footer__offer-list__link" href="#">Инструмент</a>
           </li>
           <li class="footer__offer-list__item">
-            <a href="#">Спецпредложения</a>
+            <a class="footer__offer-list__link" href="#">Спецпредложения</a>
           </li>
         </ul>
       </section>

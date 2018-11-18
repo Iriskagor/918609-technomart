@@ -8,31 +8,21 @@
     <header>
       <section class="toolbar">
         <h1 class="toolbar__title">ТЕХНОМАРТ</h1>
-        <button class="toolbar__button" type="button">
-          <img src="http://placehold.it/17x17">
-          <span>Поиск:</span>
-        </button>
-        <button class="toolbar__button" type="button">
-          <img src="http://placehold.it/14x16">
-          <span>Закладки: 0</span>
-        </button>
-        <button class="toolbar__button" type="button">
-          <img src="http://placehold.it/15x15">
-          <span>Корзина: 0</span>
-        </button>
-        <a href="#" class="toolbar__link">Оформить заказ</a>
+        <div class="toolbar__search">
+          <input type="text" placeholder="Поиск:" name="" value="">
+        </div>
+        <button class="toolbar__button" type="button">Закладки: 0</button>
+        <button class="toolbar__button" type="button">Корзина: 10</button>
+        <a class="toolbar__link" href="#" >Оформить заказ</a>
       </section>
       <section class="shop-information">
         <p class="shop-information__text">
-          Интернет-магазин <br>
-          строительных материалов<br>
+          Интернет-магазин
+          строительных материалов
           и инструментов для ремонта
         </p>
         <section class="shop-information__contacts">
-          <button type="button">
-            <img src="http://placehold.it/15x15">
-            <span>+7 (812) 555-05-55</span>
-          </button>
+          <button type="button">+7 (812) 555-05-55</button>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </section>
         <section class="shop-information__user-cabinet">
@@ -44,34 +34,33 @@
             </button>
           </div>
           <div class="shop-information__user-cabinet__cabinet">
-            <a href="#">Мои заказы </a>
-            <img src="http://placehold.it/20x17" alt="">
-            <a href="#">Личный кабинет </a>
+            <a class="shop-information__user-cabinet__cabinet__link" href="#">Мои заказы </a>
+            <a class="shop-information__user-cabinet__cabinet__link" href="#">Личный кабинет </a>
           </div>
         </section>
       </section>
       <nav class="main-nav">
         <ul>
           <li class="main-nav__item">
-            <a href="#">Главная</a>
+            <a class="main-nav__link" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Компания</a>
+            <a class="main-nav__link" href="#">Компания</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Каталог</a>
+            <a class="main-nav__link" href="#">Каталог</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Новости</a>
+            <a class="main-nav__link" href="#">Новости</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Спецпредложения</a>
+            <a class="main-nav__link" href="#">Спецпредложения</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Доставка</a>
+            <a class="main-nav__link" href="#">Доставка</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Контакты</a>
+            <a class="main-nav__link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -80,21 +69,18 @@
       <div class="breadcrumbs">
         <ul>
           <li>
-            <a href="#">
+            <a class="breadcrumbs__home"href="#">
               <img src="http://placehold.it/14x12">
             </a>
           </li>
           <li>
-            <img src="http://placehold.it/8x12">
-            <a href="#">Каталог</a>
+            <a class="breadcrumbs__link" href="#">Каталог</a>
           </li>
           <li>
-            <img src="http://placehold.it/8x12">
-            <a href="#">Инструмент</a>
+            <a class="breadcrumbs__link" href="#">Инструмент</a>
           </li>
           <li>
-            <img src="http://placehold.it/8x12">
-            <a href="#">Перфораторы</a>
+            <a class="breadcrumbs__link" href="#">Перфораторы</a>
           </li>
         </ul>
       </div>
@@ -102,109 +88,76 @@
       <section class="filter">
         <h3 class="filter__title">ПРОИЗВОДИТЕЛИ:</h3>
         <ul>
-          <li class="filter__item">
-            <img src="http://placehold.it/27x23">
-            <span>BOSCH</span>
-          </li>
-          <li class="filter__item">
-            <img src="http://placehold.it/23x23">
-            <span>ИНТЕРСКОЛ</span>
-          </li>
-          <li class="filter__item">
-            <img src="http://placehold.it/27x23">
-            <span>MAKITA</span>
-          </li>
-          <li class="filter__item">
-            <img src="http://placehold.it/23x23">
-            <span>DEWALT</span>
-          </li>
-          <li class="filter__item">
-            <img src="http://placehold.it/23x23">
-            <span>HITACHI</span>
-          </li>
+          <li class="filter__item">BOSCH</li>
+          <li class="filter__item">ИНТЕРСКОЛ</li>
+          <li class="filter__item">MAKITA</li>
+          <li class="filter__item">DEWALT</li>
+          <li class="filter__item">HITACHI</li>
         </ul>
         <hr>
         <h3 class="filter__title">ПИТАНИЕ:</h3>
         <ul>
-          <li class="filter__item">
-            <img src="http://placehold.it/27x23">
-            <span>Аккумуляторные</span>
-          </li>
-          <li class="filter__item">
-            <img src="http://placehold.it/27x23">
-            <span>Сетевые</span>
-          </li>
+          <li class="filter__item">Аккумуляторные</li>
+          <li class="filter__item">Сетевые</li>
         </ul>
         <button class="filter__button" type="button">ПОКАЗАТЬ</button>
       </section>
       <section class="product-list">
         <div class="product-list__card">
           <img src="http://placehold.it/127x112">
-          <p class="product-list__card__name">Перфоратор BOSCH </p>
-          <p class="product-list__card__name">BFG 3000 </p>
+          <p class="product-list__card__name">Перфоратор BOSCH BFG 3000 </p>
           <p class="product-list__card__oldprice">22500 Р.</p>
           <p class="product-list__card__newprice">15500 Р.</p>
         </div>
         <div class="product-list__card">
           <img src="http://placehold.it/127x112">
-          <p class="product-list__card__name">Перфоратор BOSCH </p>
-          <p class="product-list__card__name">BFG 6000 </p>
+          <p class="product-list__card__name">Перфоратор BOSCH BFG 6000 </p>
           <p class="product-list__card__oldprice">30500 Р.</p>
           <p class="product-list__card__newprice">25500 Р.</p>
         </div>
         <div class="product-list__card">
           <div class="product-list__card__sticker">new</div>
-          <button class="product-list__card__buy" type="button">
-            <img src="http://placehold.it/15x15">
-            <span>КУПИТЬ</span>
-          </button>
+          <button class="product-list__card__buy" type="button">КУПИТЬ</button>
           <button class="product-list__card__bookmark" type="button">В закладки</button>
-          <p class="product-list__card__name">Перфоратор BOSCH </p>
-          <p class="product-list__card__name">BFG 2000 </p>
+          <p class="product-list__card__name">Перфоратор BOSCH BFG 2000 </p>
           <p class="product-list__card__oldprice"></p>
           <p class="product-list__card__newprice">12500 Р.</p>
         </div>
         <div class="product-list__card">
           <img src="http://placehold.it/127x112">
-          <p class="product-list__card__name">Перфоратор BOSCH </p>
-          <p class="product-list__card__name">BFG 3000 </p>
+          <p class="product-list__card__name">Перфоратор BOSCH BFG 3000 </p>
           <p class="product-list__card__oldprice">22500 Р.</p>
           <p class="product-list__card__newprice">15500 Р.</p>
         </div>
         <div class="product-list__card">
           <div class="product-list__card__sticker">new</div>
           <img src="http://placehold.it/127x112">
-          <p class="product-list__card__name">Перфоратор BOSCH </p>
-          <p class="product-list__card__name">BFG 6000 </p>
+          <p class="product-list__card__name">Перфоратор BOSCH BFG 6000 </p>
           <p class="product-list__card__oldprice">30500 Р.</p>
           <p class="product-list__card__newprice">25500 Р.</p>
         </div>
         <div class="product-list__card">
           <img src="http://placehold.it/127x112">
-          <p class="product-list__card__name">Перфоратор BOSCH </p>
-          <p class="product-list__card__name">BFG 2000 </p>
+          <p class="product-list__card__name">Перфоратор BOSCH BFG 2000 </p>
           <p class="product-list__card__oldprice"></p>
           <p class="product-list__card__newprice">12500 Р.</p>
         </div>
         <div class="product-list__card">
           <div class="product-list__card__sticker">new</div>
           <img src="http://placehold.it/127x112">
-          <p class="product-list__card__name">Перфоратор BOSCH </p>
-          <p class="product-list__card__name">BFG 3000 </p>
+          <p class="product-list__card__name">Перфоратор BOSCH BFG 3000 </p>
           <p class="product-list__card__oldprice">22500 Р.</p>
           <p class="product-list__card__newprice">15500 Р.</p>
         </div>
         <div class="product-list__card">
           <img src="http://placehold.it/127x112">
-          <p class="product-list__card__name">Перфоратор BOSCH </p>
-          <p class="product-list__card__name">BFG 6000 </p>
+          <p class="product-list__card__name">Перфоратор BOSCH BFG 6000 </p>
           <p class="product-list__card__oldprice">30500 Р.</p>
           <p class="product-list__card__newprice">25500 Р.</p>
         </div>
         <div class="product-list__card">
           <img src="http://placehold.it/127x112">
-          <p class="product-list__card__name">Перфоратор BOSCH </p>
-          <p class="product-list__card__name">BFG 2000 </p>
+          <p class="product-list__card__name">Перфоратор BOSCH BFG 2000 </p>
           <p class="product-list__card__oldprice"></p>
           <p class="product-list__card__newprice">12500 Р.</p>
         </div>
@@ -215,36 +168,36 @@
       <section class="footer__about-list">
         <ul>
           <li class="footer__about-list__item">
-            <a href="#">Компания</a>
+            <a class="footer__about-list__link" href="#">Компания</a>
           </li>
           <li class="footer__about-list__item">
-            <a href="#">Новости</a>
+            <a class="footer__about-list__link" href="#">Новости</a>
           </li>
           <li class="footer__about-list__item">
-            <a href="#">Каталог</a>
+            <a class="footer__about-list__link" href="#">Каталог</a>
           </li>
           <li class="footer__about-list__item">
-            <a href="#">Доставка</a>
+            <a class="footer__about-list__link" href="#">Доставка</a>
           </li>
           <li class="footer__about-list__item">
-            <a href="#">Контакты</a>
+            <a class="footer__about-list__link" href="#">Контакты</a>
           </li>
         </ul>
       </section>
-      <p class="footer__addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7 (812) 555-05-55</p>
+      <p class="footer__addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
       <section class="footer__offer-list">
         <ul>
           <li class="footer__offer-list__item">
-            <a href="#">Материалы</a>
+            <a class="footer__offer-list__link" href="#">Материалы</a>
           </li>
           <li class="footer__offer-list__item">
-            <a href="#">Техника</a>
+            <a class="footer__offer-list__link" href="#">Техника</a>
           </li>
           <li class="footer__offer-list__item">
-            <a href="#">Инструмент</a>
+            <a class="footer__offer-list__link" href="#">Инструмент</a>
           </li>
           <li class="footer__offer-list__item">
-            <a href="#">Спецпредложения</a>
+            <a class="footer__offer-list__link" href="#">Спецпредложения</a>
           </li>
         </ul>
       </section>
