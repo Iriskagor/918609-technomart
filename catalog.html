@@ -11,7 +11,7 @@
         <div class="toolbar__search">
           <form class="toolbar__search__form" method="post">
             <button class="toolbar__search__button" type="submit" aria-label="Поиск"></button>
-            <input class="toolbar__search__input" type="text" placeholder="Поиск:" name="" value="">
+            <input class="toolbar__search__input" type="text" placeholder="Поиск:" name="search" value="">
           </form>
         </div>
         <button class="toolbar__button" type="button">Закладки: 0</button>
@@ -70,7 +70,7 @@
       <div class="breadcrumbs">
         <ul>
           <li>
-            <a class="breadcrumbs__home"href="#" aria-label="Выход на главную страницу">
+            <a class="breadcrumbs__home" href="#" aria-label="Выход на главную страницу">
             </a>
           </li>
           <li>
@@ -90,50 +90,36 @@
         <form class="filter__form" method="post">
           <ul>
             <li class="filter__item">
-              <label>
-                <input type="checkbox">
-                BOSCH
-              </label>
+              <input id="filter-bosch" type="checkbox">
+              <label for="filter-bosch">BOSCH</label>
             </li>
             <li class="filter__item">
-              <label>
-                <input type="checkbox">
-                ИНТЕРСКОЛ
-              </label>
+              <input id="filter-interskol" type="checkbox">
+              <label for="filter-interskol">ИНТЕРСКОЛ</label>
             </li>
             <li class="filter__item">
-              <label>
-                <input type="checkbox">
-                MAKITA
-              </label>
+              <input id="filter-makita" type="checkbox">
+              <label for="filter-makita">MAKITA</label>
             </li>
             <li class="filter__item">
-              <label>
-                <input type="checkbox">
-                DEWALT
-              </label>
+              <input id="filter-dewalt" type="checkbox">
+              <label for="filter-dewalt">DEWALT</label>
             </li>
             <li class="filter__item">
-              <label>
-                <input type="checkbox">
-                HITACHI
-              </label>
+              <input id="filter-hitachi" type="checkbox">
+              <label for="filter-hitachi">HITACHI</label>
             </li>
           </ul>
           <hr>
           <h3 class="filter__title">ПИТАНИЕ:</h3>
           <ul>
             <li class="filter__item">
-              <label>
-                <input type="radio" name="type" >
-                Аккумуляторные
-              </label>
+              <input id="filter-accu" type="radio" name="type" >
+              <label for="filter-accu">Аккумуляторные</label>
             </li>
             <li class="filter__item">
-              <label>
-                <input type="radio" name="type">
-                Сетевые
-              </label>
+              <input id="filter-net" type="radio" name="type">
+              <label for="filter-net">Сетевые</label>
             </li>
           </ul>
           <button class="filter__button" type="submit">ПОКАЗАТЬ</button>
@@ -243,13 +229,13 @@
         <p class="footer__copyright">Все права защищены</p>
         <div class="footer__social">
           <a class="footer__social__link" href="#">
-            <img src="img/icon-vk.svg" width="26" height"15" alt="Ссылка на группу Техномарт Вконтакте">
+            <img src="img/icon-vk.svg" width="26" height="15" alt="Ссылка на группу Техномарт Вконтакте">
           </a>
           <a class="footer__social__link" href="#">
-            <img src="img/icon-fb.svg" width="12" height"22" alt="Ссылка на группу Техномарт Фейсбук">
+            <img src="img/icon-fb.svg" width="12" height="22" alt="Ссылка на группу Техномарт Фейсбук">
           </a>
           <a class="footer__social__link" href="#">
-            <img src="img/icon-insta.svg" width="21" height"21" alt="Ссылка на группу Техномарт Инстаграм">
+            <img src="img/icon-insta.svg" width="21" height="21" alt="Ссылка на группу Техномарт Инстаграм">
           </a>
         </div>
         <section class="footer__links">
@@ -263,10 +249,10 @@
       </section>
     </footer>
     <div class="addtocard visually-hidden">
-      <button class="addtocard__closebutton" type="button" aria-label="Закрыть форму добавить в корзину"></button>
+      <button class="addtocard__btn-close" type="button" aria-label="Закрыть форму добавить в корзину"></button>
       <p class="addtocard__information">Товар добавлен в корзину!</p>
-      <a class="addtocard__buybutton" href="#">ОФОРМИТЬ ЗАКАЗ</a>
-      <button class="addtocard__continue"name="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+      <a class="addtocard__buy-btn" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+      <button class="addtocard__continue" name="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
     </div>
   </body>
 </html>
