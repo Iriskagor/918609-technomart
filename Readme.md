@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Ирина Горбунова](https://up.htmlacademy.ru/htmlcss/23/user/918609).
-* Наставник: `Алекс Шевляков`.
+* Наставник: [Алекс Шевляков](https://htmlacademy.ru/profile/alexjedi).
 
 ---
 

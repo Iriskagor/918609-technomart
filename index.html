@@ -9,7 +9,10 @@
       <section class="toolbar">
         <h1 class="toolbar__title">ТЕХНОМАРТ</h1>
         <div class="toolbar__search">
-          <input type="text" placeholder="Поиск:" name="" value="">
+          <form class="toolbar__search__form" method="post">
+            <button class="toolbar__search__button" type="submit" aria-label="Поиск"></button>
+            <input class="toolbar__search__input" type="text" placeholder="Поиск:" name="" value="">
+          </form>
         </div>
         <button class="toolbar__button" type="button">Закладки: 0</button>
         <button class="toolbar__button" type="button">Корзина: 0</button>
@@ -72,8 +75,28 @@
         <div class="information__contacts">
           <h2 class="information__title">КОНТАКТЫ</h2>
           <p class="information__text">Вы можете забрать товар сами, заехав в наш офис:</p>
-          <img src="http://placehold.it/300x158">
+          <button type="button" name="button" aria-label="Открыть большую карту">
+            <img src="img/map.jpg" width="300" height="158" alt="Карта">
+          </button>
           <a class="information__button" href="#">Заблудились? Напишите нам!</a>
+        </div>
+        <div class="information__writeus visually-hidden">
+          <button class="information__writeus__btn-close" type="button" aria-label="Закрыть форму Напишите нам">
+          </button>
+          <form class="information__writeus__form" method="post">
+            <label for="writeus-name">Ваше имя:</label>
+            <input id="writeus-name" type="text" name="name" placeholder="Имя Фамилия" value="">
+            <label for="writeus-mail">Ваш e-mail:</label>
+            <input id="writeus-mail" type="text" name="mail" placeholder="email@example.com" value="">
+            <label for="writeus-text">Текст письма:</label>
+            <textarea id="writeus-text" name="text" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+            <button class="information__writeus__send" type="submit">Отправить</button>
+          </form>
+        </div>
+        <div class="information__map-popup visually-hidden">
+          <button class="information__map-popup__btn-close" type="button" aria-label="Закрыть большую карту">
+          </button>
+          <img src="img/bigmap.png" alt="Большая карта">
         </div>
       </section>
     </main>
@@ -120,13 +143,13 @@
         <p class="footer__copyright">Все права защищены</p>
         <div class="footer__social">
           <a class="footer__social__link" href="#">
-            <img src="http://placehold.it/26x15" alt="">
+            <img src="img/icon-vk.svg" width="26" height="15" alt="Ссылка на группу Техномарт Вконтакте">
           </a>
           <a class="footer__social__link" href="#">
-            <img src="http://placehold.it/26x15" alt="">
+            <img src="img/icon-fb.svg" width="12" height="22" alt="Ссылка на группу Техномарт Фейсбук">
           </a>
           <a class="footer__social__link" href="#">
-            <img src="http://placehold.it/26x15" alt="">
+            <img src="img/icon-insta.svg" width="21" height="21" alt="Ссылка на группу Техномарт Инстаграм">
           </a>
         </div>
         <section class="footer__links">
