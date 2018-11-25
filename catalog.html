@@ -9,7 +9,10 @@
       <section class="toolbar">
         <h1 class="toolbar__title">ТЕХНОМАРТ</h1>
         <div class="toolbar__search">
-          <input type="text" placeholder="Поиск:" name="" value="">
+          <form class="toolbar__search__form" method="post">
+            <button class="toolbar__search__button" type="submit" aria-label="Поиск"></button>
+            <input class="toolbar__search__input" type="text" placeholder="Поиск:" name="" value="">
+          </form>
         </div>
         <button class="toolbar__button" type="button">Закладки: 0</button>
         <button class="toolbar__button" type="button">Корзина: 10</button>
@@ -28,7 +31,7 @@
         <section class="shop-information__user-cabinet">
           <div class="shop-information__user-cabinet__username">
             <span>Равшан Джамшутович</span>
-            <button type="button">
+            <button type="button" aria-label="Выйти из личного кабинета">
             </button>
           </div>
           <div class="shop-information__user-cabinet__cabinet">
@@ -67,7 +70,7 @@
       <div class="breadcrumbs">
         <ul>
           <li>
-            <a class="breadcrumbs__home"href="#">
+            <a class="breadcrumbs__home"href="#" aria-label="Выход на главную страницу">
             </a>
           </li>
           <li>
@@ -84,20 +87,57 @@
       <h2 class="catalog-title">ПЕРФОРАТОРЫ</h2>
       <section class="filter">
         <h3 class="filter__title">ПРОИЗВОДИТЕЛИ:</h3>
-        <ul>
-          <li class="filter__item">BOSCH</li>
-          <li class="filter__item">ИНТЕРСКОЛ</li>
-          <li class="filter__item">MAKITA</li>
-          <li class="filter__item">DEWALT</li>
-          <li class="filter__item">HITACHI</li>
-        </ul>
-        <hr>
-        <h3 class="filter__title">ПИТАНИЕ:</h3>
-        <ul>
-          <li class="filter__item">Аккумуляторные</li>
-          <li class="filter__item">Сетевые</li>
-        </ul>
-        <button class="filter__button" type="button">ПОКАЗАТЬ</button>
+        <form class="filter__form" method="post">
+          <ul>
+            <li class="filter__item">
+              <label>
+                <input type="checkbox">
+                BOSCH
+              </label>
+            </li>
+            <li class="filter__item">
+              <label>
+                <input type="checkbox">
+                ИНТЕРСКОЛ
+              </label>
+            </li>
+            <li class="filter__item">
+              <label>
+                <input type="checkbox">
+                MAKITA
+              </label>
+            </li>
+            <li class="filter__item">
+              <label>
+                <input type="checkbox">
+                DEWALT
+              </label>
+            </li>
+            <li class="filter__item">
+              <label>
+                <input type="checkbox">
+                HITACHI
+              </label>
+            </li>
+          </ul>
+          <hr>
+          <h3 class="filter__title">ПИТАНИЕ:</h3>
+          <ul>
+            <li class="filter__item">
+              <label>
+                <input type="radio" name="type" >
+                Аккумуляторные
+              </label>
+            </li>
+            <li class="filter__item">
+              <label>
+                <input type="radio" name="type">
+                Сетевые
+              </label>
+            </li>
+          </ul>
+          <button class="filter__button" type="submit">ПОКАЗАТЬ</button>
+        </form>
       </section>
       <section class="product-list">
         <div class="product-list__card">
@@ -222,5 +262,11 @@
         </section>
       </section>
     </footer>
+    <div class="addtocard visually-hidden">
+      <button class="addtocard__closebutton" type="button" aria-label="Закрыть форму добавить в корзину"></button>
+      <p class="addtocard__information">Товар добавлен в корзину!</p>
+      <a class="addtocard__buybutton" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+      <button class="addtocard__continue"name="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+    </div>
   </body>
 </html>

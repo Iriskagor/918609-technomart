@@ -9,7 +9,10 @@
       <section class="toolbar">
         <h1 class="toolbar__title">ТЕХНОМАРТ</h1>
         <div class="toolbar__search">
-          <input type="text" placeholder="Поиск:" name="" value="">
+          <form class="toolbar__search__form" method="post">
+            <button class="toolbar__search__button" type="submit" aria-label="Поиск"></button>
+            <input class="toolbar__search__input" type="text" placeholder="Поиск:" name="" value="">
+          </form>
         </div>
         <button class="toolbar__button" type="button">Закладки: 0</button>
         <button class="toolbar__button" type="button">Корзина: 0</button>
@@ -72,8 +75,28 @@
         <div class="information__contacts">
           <h2 class="information__title">КОНТАКТЫ</h2>
           <p class="information__text">Вы можете забрать товар сами, заехав в наш офис:</p>
-          <img src="img/map.jpg" width="300" height="158" alt="Карта">
+          <button type="button" name="button" aria-label="Открыть большую карту">
+            <img src="img/map.jpg" width="300" height="158" alt="Карта">
+          </button>
           <a class="information__button" href="#">Заблудились? Напишите нам!</a>
+        </div>
+        <div class="information__writeus visually-hidden">
+          <button class="information__writeus__closebutton" type="button" aria-label="Закрыть форму Напишите нам">
+          </button>
+          <form class="information__writeus__form" method="post">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" placeholder="Имя Фамилия" value="">
+            <label for="mail">Ваш e-mail:</label>
+            <input type="text" name="mail" placeholder="email@example.com" value="">
+            <label for="text">Текст письма:</label>
+            <textarea name="text" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+            <button class="information__writeus__send" type="submit">Отправить</button>
+          </form>
+        </div>
+        <div class="information__map-popup visually-hidden">
+          <button class="information__map-popup__closebutton" type="button" aria-label="Закрыть большую карту">
+          </button>
+          <img src="img/bigmap.png" alt="Большая карта">
         </div>
       </section>
     </main>
