@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" >
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
   </head>
   <body>
     <header>
@@ -10,13 +13,13 @@
         <h1 class="toolbar__title">ТЕХНОМАРТ</h1>
         <div class="toolbar__search">
           <form class="toolbar__search__form" method="post">
-            <button class="toolbar__search__button" type="submit" aria-label="Поиск"></button>
             <input class="toolbar__search__input" type="text" placeholder="Поиск:" name="search" value="">
+            <button class="toolbar__search__button" type="submit" aria-label="Поиск"></button>
           </form>
         </div>
         <button class="toolbar__button" type="button">Закладки: 0</button>
         <button class="toolbar__button" type="button">Корзина: 10</button>
-        <a class="toolbar__link" href="#" >Оформить заказ</a>
+        <a class="toolbar__link" href="" >Оформить заказ</a>
       </section>
       <section class="shop-information">
         <p class="shop-information__text">
@@ -25,7 +28,7 @@
           и инструментов для ремонта
         </p>
         <section class="shop-information__contacts">
-          <button type="button">+7 (812) 555-05-55</button>
+          <button class="shop-information__contacts__button" type="button">+7 (812) 555-05-55</button>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </section>
         <section class="shop-information__user-cabinet">

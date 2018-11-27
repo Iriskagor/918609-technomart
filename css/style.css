@@ -1,0 +1,169 @@
+body {
+  font-family: Cuprum, sans-serif;
+  font-size: 14px;
+}
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #f3f7f9;
+  height: 320px;
+}
+.toolbar {
+  background-color: #293449;
+  height: 42px;
+}
+.toolbar__title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 220px;
+  height: 47px;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+  text-align: center;
+  padding: 13px;
+  float:left;
+  margin: 0;
+  margin-left: 170px;
+}
+.toolbar__title:hover {
+  background-color: #ca2c37;
+}
+.toolbar__search__input::placeholder {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.toolbar__search__input {
+  background-color: #293449;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 270px;
+  padding-left: 49px;
+}
+.toolbar__search {
+  float:left;
+  width: 270px;
+  position: relative;
+  height: 42px;
+}
+.toolbar__search__input:focus {
+  background-color: #ffffff;
+}
+.toolbar__button {
+  width: 150px;
+  height: 42px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  float: left;
+}
+.toolbar__button:hover {
+  background-color: #212a3a;
+}
+.toolbar__button:focus {
+  background-color: #161d29;
+  color: rgba(255, 255, 255, 0.6);
+}
+.toolbar__link {
+  width: 150px;
+  height: 42px;
+  background-color: #63a63e;
+  display: block;
+  float: left;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  padding-top: 14px;
+  line-height: 14px;
+}
+.toolbar__link:hover {
+  background-color: #5fbb2d;
+}
+.toolbar__link:focus {
+  background-color: #518534;
+  color: rgba(255, 255, 255, 0.5);
+}
+.shop-information__text {
+  width: 196px;
+  height: 60px;
+  color: #ee3643;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  margin-left: 223px;
+  display: inline-block;
+}
+.shop-information__contacts__button {
+  border: 3px solid #ffffff;
+  color: #ee3643;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 74px;
+  padding-right: 52px;
+  text-align: center;
+  background-color: #f4f7f9;
+}
+.shop-information__contacts p {
+  color: #32425c;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.shop-information {
+  margin-top: 46px;
+}
+.shop-information__contacts {
+  display: inline-block;
+  margin-left: 71px;
+  text-align: center;
+}
+.shop-information__login {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 400;
+  background-color: #ffffff;
+  width: 121px;
+  height: 45px;
+  padding-left: 21px;
+  border: none;
+}
+.shop-information__login:hover{
+  color: #ee3643;
+}
+.shop-information__login:focus{
+  color: rgba(0, 0, 0, 0.3);
+}
+.shop-information__registration{
+  color: #000000;
+  font-size: 21px;
+  font-weight: 400;
+  background-color: #ffffff;
+  width: 150px;
+  height: 45px;
+  padding-left: 10px;
+  border: none;
+}
+.shop-information__registration:hover{
+  color: #ee3643;
+}
+.shop-information__registration:focus{
+  color: rgba(0, 0, 0, 0.3);
+}
+.shop-information__user-cabinet{
+  display: inline-block;
+  margin-left: 69px;
+}
