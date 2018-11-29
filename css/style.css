@@ -24,7 +24,6 @@ header {
   background-color: #ee3643;
   text-align: center;
   padding: 13px;
-  float:left;
   margin: 0;
   margin-left: 170px;
 }
@@ -49,7 +48,6 @@ header {
   padding-left: 49px;
 }
 .toolbar__search {
-  float:left;
   width: 270px;
   position: relative;
   height: 42px;
@@ -63,7 +61,6 @@ header {
   background-color: transparent;
   border: none;
   color: white;
-  float: left;
 }
 .toolbar__button:hover {
   background-color: #212a3a;
@@ -77,7 +74,6 @@ header {
   height: 42px;
   background-color: #63a63e;
   display: block;
-  float: left;
   text-decoration: none;
   color: #ffffff;
   font-size: 17px;
