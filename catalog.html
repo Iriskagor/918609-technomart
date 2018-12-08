@@ -10,64 +10,71 @@
   <body>
     <header>
       <section class="toolbar">
-        <h1 class="toolbar__title">ТЕХНОМАРТ</h1>
-        <div class="toolbar__search">
-          <form class="toolbar__search__form" method="post">
-            <input class="toolbar__search__input" type="text" placeholder="Поиск:" name="search" value="">
-            <button class="toolbar__search__button" type="submit" aria-label="Поиск"></button>
-          </form>
-        </div>
-        <button class="toolbar__button" type="button">Закладки: 0</button>
-        <button class="toolbar__button" type="button">Корзина: 10</button>
-        <a class="toolbar__link" href="" >Оформить заказ</a>
-      </section>
-      <section class="shop-information">
-        <p class="shop-information__text">
-          Интернет-магазин
-          строительных материалов
-          и инструментов для ремонта
-        </p>
-        <section class="shop-information__contacts">
-          <button class="shop-information__contacts__button" type="button">+7 (812) 555-05-55</button>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        </section>
-        <section class="shop-information__user-cabinet">
-          <button class="shop-information__user-cabinet__username">
-            Равшан Джамшутович
-          </button>
-          <div class="shop-information__user-cabinet__cabinet">
-            <a class="shop-information__user-cabinet__cabinet__link" href="#">Мои заказы </a>
-            <a class="shop-information__user-cabinet__cabinet__link" href="#">Личный кабинет </a>
+        <div class="wrapper toolbar__inner">
+          <h1 class="toolbar__title">ТЕХНОМАРТ</h1>
+          <div class="toolbar__search">
+            <form class="toolbar__search__form" method="post">
+              <input class="toolbar__search__input" type="text" placeholder="Поиск:" name="" value="">
+              <button class="toolbar__search__button" type="submit" aria-label="Поиск"></button>
+            </form>
           </div>
-        </section>
+          <button class="toolbar__button__bookmark" type="button">Закладки: 0</button>
+          <button class="toolbar__button__cart" type="button">Корзина: 0</button>
+          <a class="toolbar__link" href="#" >Оформить заказ</a>
+        </div>
       </section>
-      <nav class="main-nav">
-        <ul>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Компания</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Каталог</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Новости</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Спецпредложения</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Доставка</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="wrapper">
+        <section class="shop-information">
+          <p class="shop-information__text">
+            Интернет-магазин
+            строительных материалов
+            и инструментов для ремонта
+          </p>
+          <section class="shop-information__contacts">
+            <button class="shop-information__contacts__button" type="button">+7 (812) 555-05-55</button>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </section>
+          <section class="shop-information__user-cabinet">
+            <button class="shop-information__user-cabinet__username">
+              Равшан Джамшутович
+            </button>
+            <button class="shop-information__user-cabinet__logout" >
+            </button>
+            <div class="shop-information__user-cabinet__cabinet">
+              <a class="shop-information__user-cabinet__cabinet__link" href="#">Мои заказы </a>
+              <div class="shop-information__user-cabinet__cabinet__img"></div>
+              <a class="shop-information__user-cabinet__cabinet__link" href="#">Личный кабинет </a>
+            </div>
+          </section>
+        </section>
+        <nav class="main-nav">
+          <ul>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Компания</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Новости</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Спецпредложения</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Доставка</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
+    <main class="wrapper">
       <div class="breadcrumbs">
         <ul>
           <li>

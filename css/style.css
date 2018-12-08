@@ -169,7 +169,7 @@ header {
   padding-top: 13px;
   padding-bottom: 11px;
   padding-left: 74px;
-  padding-right: 52px;
+  padding-right: 45px;
   text-align: center;
   background-color: #f4f7f9;
   background-image: url(../img/icon-phone.svg);
@@ -185,11 +185,12 @@ header {
 .shop-information {
   margin-top: 46px;
   display: flex;
+  justify-content: space-between;
 }
 .shop-information__contacts {
   display: inline-block;
-  margin-left: 71px;
   text-align: center;
+  min-width: 270px;
 }
 .shop-information__login {
   color: #000000;
@@ -230,7 +231,26 @@ header {
 }
 .shop-information__user-cabinet {
   display: inline-block;
-  margin-left: 69px;
+  position: relative;
+  width: 299px;
+}
+.shop-information__user-cabinet__logout{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 45px;
+  width: 45px;
+  background-image: url(../img/icon-logout.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+}
+.shop-information__user-cabinet__logout:hover{
+  background-image: url(../img/icon-logout-hover.svg);
+}
+.shop-information__user-cabinet__logout:focus{
+  background-image: url(../img/icon-logout.svg);
 }
 .main-nav__link {
   color: #ffffff;
@@ -488,11 +508,27 @@ margin-top: 14px;
   color: #000000;
   font-size: 21px;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   border: none;
+  background-image: url(../img/icon-user.svg);
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  padding-left: 46px;
+}
+.shop-information__user-cabinet__username:hover{
+  background-image: url(../img/icon-user-hover.svg);
 }
 .shop-information__user-cabinet__username:focus{
   color: rgba(0, 0, 0, 0.3);
+  background-image: url(../img/icon-user.svg);
+}
+.shop-information__user-cabinet__cabinet{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 18px;
+  padding-right: 72px;
+  margin-top: 7px;
 }
 .shop-information__user-cabinet__cabinet__link {
   color: #32425c;
@@ -506,6 +542,21 @@ margin-top: 14px;
 .shop-information__user-cabinet__cabinet__link:focus{
   color: rgba(0, 0, 0, 0.3);
 }
+.shop-information__user-cabinet__cabinet__img{
+  border-radius: 50%;
+  width: 4px;
+  height: 5px;
+  background-color: #32425c;
+}
+.breadcrumbs ul{
+  display: flex;
+}
+.breadcrumbs__home{
+  background-image: url(../img/icon-home.svg);
+  width: 14px;
+  height: 12px;
+  display: block;
+}
 .breadcrumbs__link {
   color: #000000;
   font-family: "PT Sans";
@@ -516,6 +567,7 @@ margin-top: 14px;
 }
 .breadcrumbs li{
   list-style-type: none;
+  padding-left: 10px;
 }
 .catalog-title {
   color: #32425c;
