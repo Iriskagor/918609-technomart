@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" >
     <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <script type="text/javascript" src="js/script.js"></script>
   </head>
   <body>
     <header>
@@ -66,8 +67,183 @@
         </nav>
       </div>
     </header>
-    <main class="wrapper">
-      <section class="information">
+    <main>
+      <div class="wrapper">
+        <div class="main-banners">
+          <div class="main-banners__left">
+            <div class="main-banners__item materials">
+              <h2 class="main-banners__item__name">Материалы</h2>
+              <a class="main-banners__item__link" href="#">на любой вкус</a>
+              <div class="main-banners__item__sticker">new</div>
+            </div>
+            <div class="main-banners__item instruments">
+              <h2 class="main-banners__item__name">Инструмент</h2>
+              <a class="main-banners__item__link" href="#">на все случаи</a>
+            </div>
+            <section class="slider">
+              <div class="slider-container">
+                <div class="slider-controls">
+                  <i class="active"></i>
+                  <i></i>
+                </div>
+                <ul class="slider-list">
+                  <li class="slider-item active">
+                    <h2>ДРЕЛИ</h2>
+                    <p>Соседям на радость!</p>
+                    <a class="slider__button "href="#">ОТКРЫТЬ КАТАЛОГ</a>
+                  </li>
+                  <li class="slider-item">
+                    <h2>ПЕРФОРАТОРЫ</h2>
+                    <p>Настоящие мужские игрушки</p>
+                    <a class="slider__button "href="#">ОТКРЫТЬ КАТАЛОГ</a>
+                  </li>
+                </ul>
+                <button class="slider-button-left">
+                </button>
+                <button class="slider-button-right">
+                </button>
+              </div>
+            </section>
+          </div>
+          <div class="main-banners__right">
+            <div class="main-banners__item technic">
+              <h2 class="main-banners__item__name">Техника</h2>
+              <a class="main-banners__item__link" href="#">для стройки</a>
+            </div>
+            <div class="main-banners__item sales">
+              <h2 class="main-banners__item__name">Скидки 50%</h2>
+              <a class="main-banners__item__link" href="#">на 350 товаров</a>
+            </div>
+            <div class="main-banners__item delivery">
+              <h2 class="main-banners__item__name">Доставка</h2>
+              <a class="main-banners__item__link" href="#">бесплатно</a>
+            </div>
+          </div>
+        </div>
+        <section class="popular-products">
+          <div class="popular-products__title">
+            <h2 >популярные товары:</h2>
+            <a class="popular-products__button" href="#">все популярные товары</a>
+          </div>
+          <div class="popular-products__items">
+            <div class="popular-products__card">
+              <div class="popular-products__card__media">
+                <img src="img/bfg9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="220" height="160">
+                <button class="popular-products__card__buy" type="button">КУПИТЬ</button>
+                <button class="popular-products__card__bookmark" type="button">В закладки</button>
+              </div>
+              <p class="popular-products__card__name">Перфоратор BOSCH BFG 9000 </p>
+              <div class="popular-products__card__price">
+                <p class="popular-products__card__oldprice">32500 Р.</p>
+                <p class="popular-products__card__newprice">25500 Р.</p>
+              </div>
+            </div>
+            <div class="popular-products__card">
+              <div class="popular-products__card__media">
+                <img src="img/bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
+                <button class="popular-products__card__buy" type="button">КУПИТЬ</button>
+                <button class="popular-products__card__bookmark" type="button">В закладки</button>
+              </div>
+              <p class="popular-products__card__name">Перфоратор BOSCH BFG 3000 </p>
+              <div class="popular-products__card__price">
+                <p class="popular-products__card__oldprice">22500 Р.</p>
+                <p class="popular-products__card__newprice">15500 Р.</p>
+              </div>
+            </div>
+            <div class="popular-products__card">
+              <div class="popular-products__card__media">
+                <img src="img/bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
+                <button class="popular-products__card__buy" type="button">КУПИТЬ</button>
+                <button class="popular-products__card__bookmark" type="button">В закладки</button>
+              </div>
+              <p class="popular-products__card__name">Перфоратор BOSCH BFG 6000 </p>
+              <div class="popular-products__card__price">
+                <p class="popular-products__card__oldprice">30500 Р.</p>
+                <p class="popular-products__card__newprice">25500 Р.</p>
+              </div>
+            </div>
+            <div class="popular-products__card">
+              <div class="popular-products__card__media">
+                <div class="popular-products__card__sticker">new</div>
+                <img src="img/bfg2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
+                <button class="popular-products__card__buy" type="button">КУПИТЬ</button>
+                <button class="popular-products__card__bookmark" type="button">В закладки</button>
+              </div>
+              <p class="popular-products__card__name">Перфоратор BOSCH BFG 2000 </p>
+              <div class="popular-products__card__price">
+                <p class="popular-products__card__oldprice"></p>
+                <p class="popular-products__card__newprice">12500 Р.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="popular-producers">
+          <div class="popular-producers__title">
+            <h2 >популярные производители:</h2>
+            <a class="popular-producers__button" href="#">все производители</a>
+          </div>
+          <div class="popular-producers__items">
+            <button class="popular-producers__card">
+              <img src="img/bosch.png" alt="Bosch">
+            </button>
+            <button class="popular-producers__card">
+              <img src="img/makita.png" alt="Makita">
+            </button>
+            <button class="popular-producers__card">
+              <img src="img/dewalt.png" alt="Dewalt">
+            </button>
+            <button class="popular-producers__card">
+              <img src="img/interskol.png" alt="Interskol">
+            </button>
+            <button class="popular-producers__card">
+              <img src="img/hitachi.png" alt="Hitachi">
+            </button>
+            <button class="popular-producers__card">
+              <img src="img/lg.png" alt="Lg">
+            </button>
+            <button class="popular-producers__card">
+              <img src="img/aeg.png" alt="Aeg">
+            </button>
+            <button class="popular-producers__card">
+              <img src="img/metabo.png" alt="Metabo">
+            </button>
+          </div>
+        </section>
+      </div>
+      <div class="grey-background">
+        <div class="wrapper">
+          <section class="services">
+            <div class="services__main">
+              <h2>Сервисы</h2>
+              <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+            </div>
+            <div class="services__list__wrapper">
+              <div class="services__list__buttons">
+                <button data-id="delivery" class="services__list__button active" type="button" name="button">Доставка</button>
+                <button data-id="guarantee" class="services__list__button" type="button" name="button">Гарантия</button>
+                <button data-id="credit" class="services__list__button" type="button" name="button">Кредит</button>
+              </div>
+              <div class="services__list__items">
+                <div id="delivery" class="services__items__description active">
+                  <h2>Доставка</h2>
+                  <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                </div>
+                <div id="guarantee" class="services__items__description">
+                  <h2>Гарантия</h2>
+                  <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                </div>
+                <div id="credit" class="services__items__description">
+                  <h2>Кредит</h2>
+                  <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                  <a class="guarantee__button" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="wrapper">
+        <section class="information">
         <div class="information__about">
           <h2 class="information__title">КОМПАНИЯ «Техномарт»</h2>
           <p class="information__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -85,19 +261,29 @@
           <button class="information__map" type="button" name="button" aria-label="Открыть большую карту">
             <img src="img/map.jpg" width="300" height="158" alt="Карта">
           </button>
-          <a class="information__button" href="#">Заблудились? Напишите нам!</a>
+          <a class="information__button open-information-popup" href="#">Заблудились? Напишите нам!</a>
         </div>
         <div class="information__writeus visually-hidden">
           <button class="information__writeus__btn-close" type="button" aria-label="Закрыть форму Напишите нам">
           </button>
           <form class="information__writeus__form" method="post">
-            <label for="writeus-name">Ваше имя:</label>
-            <input id="writeus-name" type="text" name="name" placeholder="Имя Фамилия" value="">
-            <label for="writeus-mail">Ваш e-mail:</label>
-            <input id="writeus-mail" type="text" name="mail" placeholder="email@example.com" value="">
-            <label for="writeus-text">Текст письма:</label>
-            <textarea id="writeus-text" name="text" rows="8" cols="80" placeholder="В свободной форме"></textarea>
-            <button class="information__writeus__send" type="submit">Отправить</button>
+            <div class="writeus__wrapper">
+              <div class="writeus-name__wrapper">
+                <label for="writeus-name">Ваше имя:</label>
+                <input id="writeus-name" type="text" name="name" placeholder="Имя Фамилия" value="">
+              </div>
+              <div class="writeus-mail__wrapper">
+                <label for="writeus-mail">Ваш e-mail:</label>
+                <input id="writeus-mail" type="text" name="mail" placeholder="email@example.com" value="">
+              </div>
+            </div>
+            <div class="writeus-text__wrapper">
+              <label for="writeus-text">Текст письма:</label>
+              <textarea id="writeus-text" name="text" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+            </div>
+            <div class="information__writeus__button__wrapper">
+              <button class="information__writeus__button" type="submit">Отправить</button>
+            </div>
           </form>
         </div>
         <div class="information__map-popup visually-hidden">
@@ -106,6 +292,7 @@
           <img src="img/bigmap.png" alt="Большая карта">
         </div>
       </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="wrapper">
