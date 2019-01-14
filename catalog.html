@@ -12,7 +12,7 @@
     <header>
       <section class="toolbar">
         <div class="wrapper toolbar__inner">
-          <h1 class="toolbar__title">ТЕХНОМАРТ</h1>
+          <a href="index.html"><h1 class="toolbar__title">ТЕХНОМАРТ</h1></a>
           <div class="toolbar__search">
             <form class="toolbar__search__form" method="post">
               <input class="toolbar__search__input" type="text" placeholder="Поиск:" name="" value="">
@@ -20,7 +20,7 @@
             </form>
           </div>
           <button class="toolbar__button__bookmark" type="button">Закладки: 0</button>
-          <button class="toolbar__button__cart" type="button">Корзина: 0</button>
+          <button class="toolbar__button__cart active" type="button">Корзина: 10</button>
           <a class="toolbar__link" href="#" >Оформить заказ</a>
         </div>
       </section>
@@ -116,7 +116,7 @@
             <h3 class="filter__title">ПРОИЗВОДИТЕЛИ:</h3>
             <ul>
               <li class="filter__item">
-                <input id="filter-bosch" type="checkbox">
+                <input id="filter-bosch" type="checkbox" checked>
                 <label for="filter-bosch">BOSCH</label>
               </li>
               <li class="filter__item">
@@ -124,7 +124,7 @@
                 <label for="filter-interskol">ИНТЕРСКОЛ</label>
               </li>
               <li class="filter__item">
-                <input id="filter-makita" type="checkbox">
+                <input id="filter-makita" type="checkbox" checked>
                 <label for="filter-makita">MAKITA</label>
               </li>
               <li class="filter__item">
@@ -140,7 +140,7 @@
             <h3 class="filter__title">ПИТАНИЕ:</h3>
             <ul>
               <li class="filter__item">
-                <input id="filter-accu" type="radio" name="type" >
+                <input id="filter-accu" type="radio" name="type" checked>
                 <label for="filter-accu">Аккумуляторные</label>
               </li>
               <li class="filter__item">
@@ -155,7 +155,7 @@
           <div class="sort">
             <div class="sort-name">СОРТИРОВКА:</div>
             <div class="sort-items">
-              <button class="sort-items__button" type="button" name="button">ПО ЦЕНЕ</button>
+              <button class="sort-items__button active" type="button" name="button">ПО ЦЕНЕ</button>
               <button class="sort-items__button" type="button" name="button">ПО ТИПУ</button>
               <button class="sort-items__button" type="button" name="button">ПО ФУНКЦИОНАЛУ</button>
               <div class="sort-buttons">
