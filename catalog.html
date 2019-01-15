@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" >
-    <link rel="stylesheet" type="text/css" href="css/style.css" >
-    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
     <header>
@@ -15,27 +14,27 @@
           <a href="index.html"><h1 class="toolbar__title">ТЕХНОМАРТ</h1></a>
           <div class="toolbar__search">
             <form class="toolbar__search__form" method="post">
-              <input class="toolbar__search__input" type="text" placeholder="Поиск:" name="" value="">
+              <input class="toolbar__search__input" type="text" placeholder="Поиск:" name="search" value="">
               <button class="toolbar__search__button" type="submit" aria-label="Поиск"></button>
             </form>
           </div>
-          <button class="toolbar__button__bookmark" type="button">Закладки: 0</button>
-          <button class="toolbar__button__cart active" type="button">Корзина: 10</button>
+          <a class="toolbar__button__bookmark" href="#">Закладки: 0</a>
+          <a class="toolbar__button__cart active" href="#">Корзина: 10</a>
           <a class="toolbar__link" href="#" >Оформить заказ</a>
         </div>
       </section>
       <div class="wrapper">
-        <section class="shop-information">
+        <div class="shop-information">
           <p class="shop-information__text">
             Интернет-магазин
             строительных материалов
             и инструментов для ремонта
           </p>
-          <section class="shop-information__contacts">
-            <button class="shop-information__contacts__button" type="button">+7 (812) 555-05-55</button>
+          <div class="shop-information__contacts">
+            <span class="shop-information__contacts__phone">+7 (812) 555-05-55</span>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          </section>
-          <section class="shop-information__user-cabinet">
+          </div>
+          <div class="shop-information__user-cabinet">
             <button class="shop-information__user-cabinet__username">
               Равшан Джамшутович
             </button>
@@ -46,8 +45,8 @@
               <div class="shop-information__user-cabinet__cabinet__img"></div>
               <a class="shop-information__user-cabinet__cabinet__link" href="#">Личный кабинет </a>
             </div>
-          </section>
-        </section>
+          </div>
+        </div>
         <nav class="main-nav">
           <ul>
             <li class="main-nav__item">
@@ -105,11 +104,11 @@
             </div>
             <div class="prices">
               <div class="min-price">
-                <input type="text" name="" value="0">
+                <input type="text" name="range-input" value="0">
               </div>
               <div class="prices__dash"></div>
               <div class="max-price">
-                <input type="text" name="" value="30000">
+                <input type="text" name="range-input" value="30000">
               </div>
             </div>
             <hr>
@@ -155,12 +154,12 @@
           <div class="sort">
             <div class="sort-name">СОРТИРОВКА:</div>
             <div class="sort-items">
-              <button class="sort-items__button active" type="button" name="button">ПО ЦЕНЕ</button>
-              <button class="sort-items__button" type="button" name="button">ПО ТИПУ</button>
-              <button class="sort-items__button" type="button" name="button">ПО ФУНКЦИОНАЛУ</button>
+              <a class="sort-items__button active" href="#">ПО ЦЕНЕ</a>
+              <a class="sort-items__button" href="#">ПО ТИПУ</a>
+              <a class="sort-items__button" href="#">ПО ФУНКЦИОНАЛУ</a>
               <div class="sort-buttons">
-                <button class="sort-button__asc active" type="button" name="button"></button>
-                <button class="sort-button__desc" type="button" name="button"></button>
+                <a class="sort-button__asc active" href="#"></a>
+                <a class="sort-button__desc" href="#"></a>
               </div>
             </div>
           </div>
@@ -298,10 +297,10 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="footer__top wrapper">
+      <div class="wrapper">
         <div class="footer__about-list__wrapper">
           <h1 class="footer__title">ТЕХНОМАРТ</h1>
-          <section class="footer__about-list">
+          <div class="footer__about-list">
             <ul>
               <li class="footer__about-list__item">
                 <a class="footer__about-list__link" href="#">Компания</a>
@@ -319,11 +318,11 @@
                 <a class="footer__about-list__link" href="#">Контакты</a>
               </li>
             </ul>
-          </section>
+          </div>
         </div>
         <div class="footer__offer-list__wrapper">
           <p class="footer__addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
-          <section class="footer__offer-list">
+          <div class="footer__offer-list">
             <ul>
               <li class="footer__offer-list__item">
                 <a class="footer__offer-list__link" href="#">Материалы</a>
@@ -338,10 +337,10 @@
                 <a class="footer__offer-list__link" href="#">Спецпредложения</a>
               </li>
             </ul>
-          </section>
+          </div>
         </div>
       </div>
-      <section class="footer__rights">
+      <div class="footer__rights">
         <div class="wrapper footer__rights__wrapper">
           <div>
             <p class="footer__copyright">© 2010–2017 Компания «Техномарт»</p>
@@ -359,17 +358,17 @@
             </a>
           </div>
           <div class="footer__links__wrapper">
-            <section class="footer__links">
+            <div class="footer__links">
               <p class="footer__links__item">Обратная связь:</p>
               <a class="footer__links_link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </section>
-            <section class="footer__links">
+            </div>
+            <div class="footer__links">
               <p class="footer__links__item">Разработано —</p>
-              <a class="footer__links_link" href="https://htmlacademy.ru">htmlacademy.ru</a>
-            </section>
+              <a class="footer__links_link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
     </footer>
     <div class="addtocard__popup visually-hidden">
       <button class="addtocard__popup__btn-close" type="button" name="button" aria-label="Закрыть форму Товар добавлен в корзину"></button>
@@ -381,5 +380,7 @@
         <button type="button" name="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
       </div>
     </div>
+
+    <script type="text/javascript" src="js/script.min.js"></script>
   </body>
 </html>
