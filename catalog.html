@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin,cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
@@ -49,13 +51,13 @@
         <nav class="main-nav">
           <ul>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Компания</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Каталог</a>
+              <a class="main-nav__link" href="catalog.html">Каталог</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Новости</a>
@@ -95,19 +97,19 @@
       <div class="catalog-content">
         <section class="filter">
           <form class="filter__form" method="post">
-            <h2 class="filter-name">ФИЛЬТР:</h2>
+            <h2 class="filter__name">ФИЛЬТР:</h2>
             <h3 class="filter__title filter__price-title">ЦЕНА:</h3>
-            <div class="price-range">
-              <div class="left-circle circle"></div>
-              <div class="right-circle circle"></div>
+            <div class="filter__price-range">
+              <div class="filter__left-circle filter__circle"></div>
+              <div class="filter__right-circle filter__circle"></div>
             </div>
-            <div class="prices">
-              <div class="min-price">
-                <input type="text" name="range-input" value="0">
+            <div class="filter__prices">
+              <div class="filter__min-price">
+                <input type="text" name="filter__range-input" value="0">
               </div>
-              <div class="prices__dash"></div>
-              <div class="max-price">
-                <input type="text" name="range-input" value="30000">
+              <div class="filter__prices__dash"></div>
+              <div class="filter__max-price">
+                <input type="text" name="filter__range-input" value="30000">
               </div>
             </div>
             <hr>
@@ -157,8 +159,8 @@
               <a class="sort-items__button" href="#">ПО ТИПУ</a>
               <a class="sort-items__button" href="#">ПО ФУНКЦИОНАЛУ</a>
               <div class="sort-buttons">
-                <a class="sort-button__asc active" href="#"></a>
-                <a class="sort-button__desc" href="#"></a>
+                <a class="sort-button__asc active" href="#" aria-label="Сортировать по возгаранию"></a>
+                <a class="sort-button__desc" href="#" aria-label="Сортировать по убыванию"></a>
               </div>
             </div>
           </div>

@@ -1,18 +1,20 @@
 document.addEventListener("DOMContentLoaded", function(){
-  Array.from(document.getElementsByClassName('services__list__button')).forEach(function(el){
-    el.addEventListener('click', function(e){
+  var listButtons = document.getElementsByClassName('services__list__button');
+  for (var i = 0; i < listButtons.length; i++) {
+    listButtons[i].addEventListener('click', function(e){
       var target = e.target
       var id = target.getAttribute('data-id');
-      Array.from(document.getElementsByClassName('services__list__button')).forEach(function(el){
-        el.className = "services__list__button"
-      });
+      for (var j = 0; j < listButtons.length; j++) {
+        listButtons[j].className = "services__list__button";
+      }
       target.className = "services__list__button active";
-      Array.from(document.getElementsByClassName('services__items__description')).forEach(function(el){
-        el.className = "services__items__description"
-      });
+      var descriptions = document.getElementsByClassName('services__items__description')
+      for (var k = 0; k < descriptions.length; k++) {
+        descriptions[k].className = "services__items__description";
+      }
       document.getElementById(id).className = "services__items__description active";
     });
-  });
+  };
   var openMap = document.querySelector('.information__map');
   if (openMap){
     openMap.addEventListener('click', function(e){
@@ -47,14 +49,14 @@ document.addEventListener("DOMContentLoaded", function(){
     })
   }
 
-  var addToCartButtons = Array.from(document.getElementsByClassName('product-list__card__buy'));
+  var addToCartButtons = document.getElementsByClassName('product-list__card__buy');
   if (addToCartButtons.length > 0){
-    addToCartButtons.forEach(function(el){
-      el.addEventListener('click', function(e){
+    for (var i = 0; i < addToCartButtons.length; i++) {
+      addToCartButtons[i].addEventListener('click', function(e){
         e.preventDefault();
         document.querySelector('.addtocard__popup').classList.remove('visually-hidden');
       })
-    })
+    }
   }
 
   var addToCartClose = document.querySelector('.addtocard__popup__btn-close');
