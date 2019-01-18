@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin,cyrillic">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin,cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
     <header>
@@ -24,7 +24,7 @@
           <a class="toolbar__link" href="#" >Оформить заказ</a>
         </div>
       </section>
-      <div class="wrapper">
+      <div class="wrapper wrapper--header">
         <div class="shop-information">
           <p class="shop-information__text">
             Интернет-магазин
@@ -71,7 +71,7 @@
       <div class="wrapper">
         <div class="main-banners">
           <div class="main-banners__left">
-            <div class="main-banners__item materials with-sticker">
+            <div class="main-banners__item materials main-banners__item--new">
               <h2 class="main-banners__item__name">Материалы</h2>
               <a class="main-banners__item__link" href="#">на любой вкус</a>
             </div>
@@ -80,28 +80,28 @@
               <a class="main-banners__item__link" href="#">на все случаи</a>
             </div>
             <section class="slider">
-              <div class="slider-container">
+              <div class="slider__container">
                 <input id="radio-1" type="radio" name="slider-btn" class="slider__radio-btn radio-btn--first" checked>
                 <input id="radio-2" type="radio" name="slider-btn" class="slider__radio-btn radio-btn--second">
-                <div class="slider-controls">
-                  <label for="radio-1"></label>
-                  <label for="radio-2"></label>
+                <div class="slider__controls">
+                  <label class="slider__controls__label" for="radio-1"></label>
+                  <label class="slider__controls__label" for="radio-2"></label>
                 </div>
-                <ul class="slider-list">
-                  <li class="slider-item">
-                    <h2>ДРЕЛИ</h2>
-                    <p>Соседям на радость!</p>
-                    <a class="slider__button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                <ul class="slider__list">
+                  <li class="slider__list__item">
+                    <h2 class="slider__list__item__title">ДРЕЛИ</h2>
+                    <p class="slider__list__item__text">Соседям на радость!</p>
+                    <a class="slider__list__item__link" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
                   </li>
-                  <li class="slider-item">
+                  <li class="slider__list__item">
                     <h2>ПЕРФОРАТОРЫ</h2>
                     <p>Настоящие мужские игрушки</p>
-                    <a class="slider__button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                    <a class="slider__list__item__link" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
                   </li>
                 </ul>
-                <button class="slider-button-left">
+                <button class="slider__btn--left">
                 </button>
-                <button class="slider-button-right">
+                <button class="slider__btn--right">
                 </button>
               </div>
             </section>
@@ -164,8 +164,7 @@
               </div>
             </div>
             <div class="popular-products__card">
-              <div class="popular-products__card__media">
-                <div class="popular-products__card__sticker">new</div>
+              <div class="popular-products__card__media popular-products__card__media--new">
                 <img src="img/bfg2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
                 <a href="#" class="popular-products__card__buy">КУПИТЬ</a>
                 <button class="popular-products__card__bookmark" type="button">В закладки</button>
@@ -210,12 +209,12 @@
           </div>
         </section>
       </div>
-      <div class="grey-background">
+      <div class="services__container">
         <div class="wrapper">
           <section class="services">
             <div class="services__main">
-              <h2>Сервисы</h2>
-              <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+              <h2 class="services__main__title">Сервисы</h2>
+              <p class="services__main__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             </div>
             <div class="services__list__wrapper">
               <div class="services__list__buttons">
@@ -225,17 +224,17 @@
               </div>
               <div class="services__list__items">
                 <div id="delivery" class="services__items__description active">
-                  <h2>Доставка</h2>
-                  <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                  <h2 class="services__items__description__title">Доставка</h2>
+                  <p class="services__items__description__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
                 </div>
                 <div id="guarantee" class="services__items__description">
-                  <h2>Гарантия</h2>
-                  <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                  <h2 class="services__items__description__title">Гарантия</h2>
+                  <p class="services__items__description__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
                 </div>
                 <div id="credit" class="services__items__description">
-                  <h2>Кредит</h2>
-                  <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-                  <a class="guarantee__button" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+                  <h2 class="services__items__description__title">Кредит</h2>
+                  <p class="services__items__description__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                  <a class="services__items__description__btn" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
                 </div>
               </div>
             </div>
@@ -257,49 +256,51 @@
         </div>
         <div class="information__contacts">
           <h2 class="information__title">КОНТАКТЫ</h2>
-          <p class="information__text">Вы можете забрать товар сами, <br>заехав в наш офис:</p>
+          <p class="information__text information__text--map">Вы можете забрать товар сами, <br>заехав в наш офис:</p>
           <a href="https://goo.gl/maps/22y7d1GbEhG2" class="information__map" aria-label="Открыть большую карту">
             <img src="img/map.jpg" width="300" height="158" alt="Карта">
           </a>
           <a class="information__button open-information-popup" href="#">Заблудились? Напишите нам!</a>
         </div>
-        <div class="information__writeus visually-hidden">
+
+        <div class="information__writeus">
           <button class="information__writeus__btn-close" type="button" aria-label="Закрыть форму Напишите нам">
           </button>
           <form class="information__writeus__form" method="post">
             <div class="writeus__wrapper">
               <div class="writeus-name__wrapper">
                 <label for="writeus-name">Ваше имя:</label>
-                <input id="writeus-name" type="text" name="name" placeholder="Имя Фамилия" value="">
+                <input id="writeus-name" type="text" name="writeus-name" placeholder="Имя Фамилия" value="">
               </div>
               <div class="writeus-mail__wrapper">
                 <label for="writeus-mail">Ваш e-mail:</label>
-                <input id="writeus-mail" type="text" name="mail" placeholder="email@example.com" value="">
+                <input id="writeus-mail" type="text" name="writeus-mail" placeholder="email@example.com" value="">
               </div>
             </div>
             <div class="writeus-text__wrapper">
               <label for="writeus-text">Текст письма:</label>
-              <textarea id="writeus-text" name="text" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+              <textarea id="writeus-text" name="writeus-text" rows="8" cols="80" placeholder="В свободной форме"></textarea>
             </div>
             <div class="information__writeus__button__wrapper">
-              <button class="information__writeus__button" type="submit">Отправить</button>
+              <button class="information__writeus__button" type="submit" aria-label="Отправить">Отправить</button>
             </div>
           </form>
         </div>
-        <div class="information__map-popup visually-hidden">
-          <button class="information__map-popup__btn-close" type="button" aria-label="Закрыть большую карту">
-          </button>
 
+        <div class="information__map-popup visually-hidden">
+          <button class="information__map-popup__btn-close" type="button" aria-label="Закрыть большую карту"></button>
         </div>
+
       </section>
       </div>
     </main>
+
     <footer class="footer">
       <div class="wrapper">
         <div class="footer__about-list__wrapper">
           <h1 class="footer__title">ТЕХНОМАРТ</h1>
           <div class="footer__about-list">
-            <ul>
+            <ul class="footer__about-list__container">
               <li class="footer__about-list__item">
                 <a class="footer__about-list__link" href="#">Компания</a>
               </li>
@@ -321,7 +322,7 @@
         <div class="footer__offer-list__wrapper">
           <p class="footer__addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
           <div class="footer__offer-list">
-            <ul>
+            <ul class="footer__offer-list__container">
               <li class="footer__offer-list__item">
                 <a class="footer__offer-list__link" href="#">Материалы</a>
               </li>
@@ -369,6 +370,6 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
   </body>
 </html>
