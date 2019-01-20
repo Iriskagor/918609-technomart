@@ -229,6 +229,7 @@ header {
   background-image: url(../img/icon-phone.svg);
   background-repeat: no-repeat;
   background-position: 6% 50%;
+  text-decoration: none;
 }
 .shop-information__contacts p {
   color: #32425c;
@@ -841,6 +842,7 @@ input[type="radio"]:disabled + label {
 }
 .filter__form ul {
   padding-left: 0px;
+  margin-top: 18px;
   margin-bottom: 21px;
 }
 .filter__item label {
@@ -1809,10 +1811,10 @@ input[type="radio"]:disabled + label {
   width: 468px;
   height: 261px;
 }
-#guarantee::after {
+.services__items__description:nth-child(2)::after {
   background-image: url(../img/guarantee.png);
 }
-#credit::after {
+.services__items__description:nth-child(3)::after {
   background-image: url(../img/credit.png);
 }
 .services__items__description__btn {
@@ -2118,7 +2120,7 @@ input[type="radio"]:disabled + label {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 18px;
-  margin-top: 0;
+  margin: 0;
 }
 .filter__price-range {
   height: 80px;
@@ -2207,8 +2209,14 @@ input[type="radio"]:disabled + label {
   height: 1px;
   background-color:#444444;
 }
-.filter hr {
-  border-color: #e5e5e5;
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+.filter fieldset:nth-child(4) {
+  border-bottom: none;
 }
 .sort {
   display: -webkit-box;

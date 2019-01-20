@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin,cyrillic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
@@ -98,56 +99,60 @@
         <section class="filter">
           <form class="filter__form" method="post">
             <h2 class="filter__name">ФИЛЬТР:</h2>
-            <h3 class="filter__title filter__price-title">ЦЕНА:</h3>
-            <div class="filter__price-range">
-              <div class="filter__left-circle filter__circle"></div>
-              <div class="filter__right-circle filter__circle"></div>
-            </div>
-            <div class="filter__prices">
-              <div class="filter__min-price">
-                <input type="text" name="filter__range-input" value="0">
+            <fieldset>
+              <legend class="filter__title filter__price-title">ЦЕНА:</legend>
+              <div class="filter__price-range">
+                <div class="filter__left-circle filter__circle"></div>
+                <div class="filter__right-circle filter__circle"></div>
               </div>
-              <div class="filter__prices__dash"></div>
-              <div class="filter__max-price">
-                <input type="text" name="filter__range-input" value="30000">
+              <div class="filter__prices">
+                <div class="filter__min-price">
+                  <input type="text" name="filter__range-input" value="0">
+                </div>
+                <div class="filter__prices__dash"></div>
+                <div class="filter__max-price">
+                  <input type="text" name="filter__range-input" value="30000">
+                </div>
               </div>
-            </div>
-            <hr>
-            <h3 class="filter__title">ПРОИЗВОДИТЕЛИ:</h3>
-            <ul>
-              <li class="filter__item">
-                <input id="filter-bosch" type="checkbox" checked>
-                <label for="filter-bosch">BOSCH</label>
-              </li>
-              <li class="filter__item">
-                <input id="filter-interskol" type="checkbox">
-                <label for="filter-interskol">ИНТЕРСКОЛ</label>
-              </li>
-              <li class="filter__item">
-                <input id="filter-makita" type="checkbox" checked>
-                <label for="filter-makita">MAKITA</label>
-              </li>
-              <li class="filter__item">
-                <input id="filter-dewalt" type="checkbox">
-                <label for="filter-dewalt">DEWALT</label>
-              </li>
-              <li class="filter__item">
-                <input id="filter-hitachi" type="checkbox">
-                <label for="filter-hitachi">HITACHI</label>
-              </li>
-            </ul>
-            <hr>
-            <h3 class="filter__title">ПИТАНИЕ:</h3>
-            <ul>
-              <li class="filter__item">
-                <input id="filter-accu" type="radio" name="type" checked>
-                <label for="filter-accu">Аккумуляторные</label>
-              </li>
-              <li class="filter__item">
-                <input id="filter-net" type="radio" name="type">
-                <label for="filter-net">Сетевые</label>
-              </li>
-            </ul>
+            </fieldset>
+            <fieldset>
+              <legend class="filter__title">ПРОИЗВОДИТЕЛИ:</legend>
+              <ul>
+                <li class="filter__item">
+                  <input id="filter-bosch" type="checkbox" checked>
+                  <label for="filter-bosch">BOSCH</label>
+                </li>
+                <li class="filter__item">
+                  <input id="filter-interskol" type="checkbox">
+                  <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                </li>
+                <li class="filter__item">
+                  <input id="filter-makita" type="checkbox" checked>
+                  <label for="filter-makita">MAKITA</label>
+                </li>
+                <li class="filter__item">
+                  <input id="filter-dewalt" type="checkbox">
+                  <label for="filter-dewalt">DEWALT</label>
+                </li>
+                <li class="filter__item">
+                  <input id="filter-hitachi" type="checkbox">
+                  <label for="filter-hitachi">HITACHI</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend class="filter__title">ПИТАНИЕ:</legend>
+              <ul>
+                <li class="filter__item">
+                  <input id="filter-accu" type="radio" name="type" checked>
+                  <label for="filter-accu">Аккумуляторные</label>
+                </li>
+                <li class="filter__item">
+                  <input id="filter-net" type="radio" name="type">
+                  <label for="filter-net">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
             <button class="filter__button" type="submit">ПОКАЗАТЬ</button>
           </form>
         </section>
@@ -378,6 +383,6 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
   </body>
 </html>
