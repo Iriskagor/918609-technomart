@@ -201,7 +201,7 @@ header {
   color: rgba(255, 255, 255, 0.5);
 }
 .shop-information__text {
-  width: 194px;
+  width: 195px;
   color: #ee3643;
   font-size: 16px;
   font-style: italic;
@@ -770,10 +770,8 @@ margin-top: 14px;
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 21px;
 }
 .filter__price-title {
-  margin-top: 17px;
   margin-bottom: 19px;
 }
 .filter__item {
@@ -956,7 +954,7 @@ input[type="radio"]:disabled + label {
   text-decoration: line-through;
   text-transform: uppercase;
   margin-bottom: -7px;
-  margin-left: 4px;
+  margin-left: 13px;
 }
 .product-list__card__newprice {
   color: #ffffff;
@@ -972,9 +970,8 @@ input[type="radio"]:disabled + label {
   text-align: center;
   padding-top: 9px;
   border-radius: 2px;
-  padding-left: 15px;
+  padding-left: 13px;
   margin-bottom: 20px;
-  margin-right: 11px;
 }
 .product-list__card__newprice::after {
     content: "";
@@ -1176,7 +1173,7 @@ input[type="radio"]:disabled + label {
 }
 .slider__list__item__link {
   display: block;
-  width: 195px;
+  width: 198px;
   height: 38px;
   background-color: #ee3643;
   color: #ffffff;
@@ -1447,6 +1444,8 @@ input[type="radio"]:disabled + label {
   padding: 0 20px;
   text-align: center;
   width: 100%;
+  margin-top: 14px;
+  margin-bottom: 23px;
 }
 .popular-products__card__price {
   position: absolute;
@@ -1495,6 +1494,7 @@ input[type="radio"]:disabled + label {
   border-radius: 2px;
   top: -4px;
   left: -6px;
+  padding-left: 15px;
 }
 .popular-products__card__newprice::after {
     content: "";
@@ -2217,6 +2217,12 @@ input[type="radio"]:disabled + label {
 }
 .filter fieldset:nth-child(4) {
   border-bottom: none;
+}
+.filter .filter__fieldset {
+  margin-top: 21px;
+}
+.filter .filter__fieldset-price {
+  margin-top: 17px;
 }
 .sort {
   display: -webkit-box;
